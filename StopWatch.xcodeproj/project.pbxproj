@@ -10,9 +10,11 @@
 		CFEF5F6D21E7AEAD00D5B9E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEF5F6C21E7AEAD00D5B9E5 /* AppDelegate.swift */; };
 		CFEF5F6F21E7AEAD00D5B9E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEF5F6E21E7AEAD00D5B9E5 /* ViewController.swift */; };
 		CFEF5F7221E7AEAD00D5B9E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFEF5F7021E7AEAD00D5B9E5 /* Main.storyboard */; };
-		CFEF5F7521E7AEAD00D5B9E5 /* StopWatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFEF5F7321E7AEAD00D5B9E5 /* StopWatch.xcdatamodeld */; };
 		CFEF5F7721E7AEAF00D5B9E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFEF5F7621E7AEAF00D5B9E5 /* Assets.xcassets */; };
 		CFEF5F7A21E7AEAF00D5B9E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFEF5F7821E7AEAF00D5B9E5 /* LaunchScreen.storyboard */; };
+		CFEF5F8221E7BB3B00D5B9E5 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEF5F8121E7BB3B00D5B9E5 /* TableCell.swift */; };
+		CFEF5F8421E869E800D5B9E5 /* CustomConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEF5F8321E869E800D5B9E5 /* CustomConstraints.swift */; };
+		CFEF5F8C21E86BE100D5B9E5 /* StopWatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFEF5F8A21E86BE100D5B9E5 /* StopWatch.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		CFEF5F6C21E7AEAD00D5B9E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFEF5F6E21E7AEAD00D5B9E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CFEF5F7121E7AEAD00D5B9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CFEF5F7421E7AEAD00D5B9E5 /* StopWatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StopWatch.xcdatamodel; sourceTree = "<group>"; };
 		CFEF5F7621E7AEAF00D5B9E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFEF5F7921E7AEAF00D5B9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFEF5F7B21E7AEAF00D5B9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFEF5F8121E7BB3B00D5B9E5 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		CFEF5F8321E869E800D5B9E5 /* CustomConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomConstraints.swift; sourceTree = "<group>"; };
+		CFEF5F8B21E86BE100D5B9E5 /* StopWatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StopWatch.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		CFEF5F6B21E7AEAD00D5B9E5 /* StopWatch */ = {
 			isa = PBXGroup;
 			children = (
+				CFEF5F8921E86BB600D5B9E5 /* Controller */,
+				CFEF5F8821E86BAE00D5B9E5 /* View */,
+				CFEF5F8721E86BA600D5B9E5 /* Model */,
 				CFEF5F6C21E7AEAD00D5B9E5 /* AppDelegate.swift */,
-				CFEF5F6E21E7AEAD00D5B9E5 /* ViewController.swift */,
 				CFEF5F7021E7AEAD00D5B9E5 /* Main.storyboard */,
 				CFEF5F7621E7AEAF00D5B9E5 /* Assets.xcassets */,
 				CFEF5F7821E7AEAF00D5B9E5 /* LaunchScreen.storyboard */,
 				CFEF5F7B21E7AEAF00D5B9E5 /* Info.plist */,
-				CFEF5F7321E7AEAD00D5B9E5 /* StopWatch.xcdatamodeld */,
+				CFEF5F8321E869E800D5B9E5 /* CustomConstraints.swift */,
 			);
 			path = StopWatch;
+			sourceTree = "<group>";
+		};
+		CFEF5F8721E86BA600D5B9E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFEF5F8A21E86BE100D5B9E5 /* StopWatch.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFEF5F8821E86BAE00D5B9E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFEF5F8121E7BB3B00D5B9E5 /* TableCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFEF5F8921E86BB600D5B9E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFEF5F6E21E7AEAD00D5B9E5 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFEF5F7521E7AEAD00D5B9E5 /* StopWatch.xcdatamodeld in Sources */,
 				CFEF5F6F21E7AEAD00D5B9E5 /* ViewController.swift in Sources */,
+				CFEF5F8C21E86BE100D5B9E5 /* StopWatch.xcdatamodeld in Sources */,
+				CFEF5F8421E869E800D5B9E5 /* CustomConstraints.swift in Sources */,
+				CFEF5F8221E7BB3B00D5B9E5 /* TableCell.swift in Sources */,
 				CFEF5F6D21E7AEAD00D5B9E5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,12 +372,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CFEF5F7321E7AEAD00D5B9E5 /* StopWatch.xcdatamodeld */ = {
+		CFEF5F8A21E86BE100D5B9E5 /* StopWatch.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CFEF5F7421E7AEAD00D5B9E5 /* StopWatch.xcdatamodel */,
+				CFEF5F8B21E86BE100D5B9E5 /* StopWatch.xcdatamodel */,
 			);
-			currentVersion = CFEF5F7421E7AEAD00D5B9E5 /* StopWatch.xcdatamodel */;
+			currentVersion = CFEF5F8B21E86BE100D5B9E5 /* StopWatch.xcdatamodel */;
 			path = StopWatch.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
